@@ -10,12 +10,16 @@ import ServicesContact from "@/components/ServicesContact";
 export default function Services() {
   return (
     <main>
-      <Header />
+      <Header businessName="Cédric Jardins" businessHref="/cedric-jardins"/>
       <ServicesHero />
       <ServicesList />
       <ServicesPrices />
       <ServicesContact />
-      <Footer />
+      <Footer 
+          businessName="Cédric Jardins"
+          phoneNumber="+33 6 67 17 90 63"
+          address="12 Chem. de la Merlette"
+        />
     </main>
   );
 }

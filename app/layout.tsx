@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cédric Jardins",
-  description: "Vous cherchez un paysagiste professionnel expérimenté pour votre jardin ? Avec plus de 1à ans d'expèriences, je saurai entretenir et sublimer votre espace extérieure",
+  title: "Hugo Misery",
+  description: "Vous cherchez un paysagiste professionnel expérimenté pour votre jardin ? Avec plus de 10 ans d'expèriences, je saurai entretenir et sublimer votre espace extérieure",
 };
 
 export default function RootLayout({

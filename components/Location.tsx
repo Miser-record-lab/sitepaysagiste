@@ -2,27 +2,17 @@
 import React from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
-const cities = [
-  'Cannes',
-  'Antibes',
-  'Valbonne',
-  'Mandelieu',
-  'Mougins',
-  'Le Cannet',
-  'Grasse',
-  'Vallauris',
-  'Biot',
-  'Théoule-sur-Mer',
-];
+interface LocationProps {
+  cities: string[];
+  introText: string;
+}
 
-const Location: React.FC = () => {
+const Location: React.FC<LocationProps> = ({ cities, introText }) => {
   return (
     <section className="bg-green py-[100px] px-8 text-white">
       <div className="container mx-auto text-center">
         {/* Intro Text */}
-        <h2 className="text-3xl md:text-5xl font-thin mb-20">
-          Nous couvrons Cannes, Antibes & Mandelieu
-        </h2>
+        <h2 className="text-3xl md:text-5xl font-thin mb-20">{introText}</h2>
 
         {/* Cities List for large screens */}
         <div className="hidden md:grid grid-rows-2 gap-12">

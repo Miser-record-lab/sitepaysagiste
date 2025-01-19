@@ -6,7 +6,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaPhoneAlt, FaBars, FaTimes, FaLeaf } from 'react-icons/fa';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  businessName: string;
+  businessHref: string; // Nouvelle prop pour personnaliser les liens
+}
+
+const Header: React.FC<HeaderProps> = ({ businessName, businessHref }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -14,7 +19,7 @@ const Header: React.FC = () => {
       {/* Logo and Name for larger screens */}
       <div className="hidden md:flex items-center">
         <Image src="/logo-paysagiste.png" alt="Logo" width={76} height={76} />
-        <p className="px-6 font-bold text-xl">Cédric Jardins</p>
+        <p className="px-6 font-bold text-md max-w-60">{businessName}</p>
       </div>
 
       {/* Small Screen - Toggle Button and Contact Button */}
@@ -25,7 +30,7 @@ const Header: React.FC = () => {
         >
           <FaBars />
         </button>
-        <Link href="/cedric-jardins/contact">
+        <Link href={`${businessHref}/contact`}>
           <button className="flex items-center gap-2 text-white font-semibold px-4 py-2 rounded-tl-md rounded-br-md border border-white border-transparent group hover:bg-primary transition">
             <FaPhoneAlt />
             Me Contacter
@@ -36,7 +41,7 @@ const Header: React.FC = () => {
       {/* Navigation for larger screens */}
       <nav className="hidden md:flex gap-6">
         <Link
-          href="/cedric-jardins/accueil"
+          href={`${businessHref}/accueil`}
           className="text-white font-semibold relative group py-2 px-4"
         >
           Accueil
@@ -46,7 +51,7 @@ const Header: React.FC = () => {
         </Link>
 
         <Link
-          href="/cedric-jardins/services"
+          href={`${businessHref}/services`}
           className="text-white font-semibold relative group py-2 px-4"
         >
           Services
@@ -55,7 +60,7 @@ const Header: React.FC = () => {
           ></span>
         </Link>
         <Link
-          href="/cedric-jardins/apropos"
+          href={`${businessHref}/apropos`}
           className="text-white font-semibold relative group py-2 px-4"
         >
           À propos
@@ -67,7 +72,7 @@ const Header: React.FC = () => {
 
       {/* Contact Button for larger screens */}
       <div className="hidden md:block">
-        <Link href="/cedric-jardins/contact">
+        <Link href={`${businessHref}/contact`}>
           <button className="flex items-center gap-2 text-white font-semibold px-4 py-2 rounded-tl-md rounded-br-md border border-white border-transparent group hover:bg-primary transition">
             <FaPhoneAlt />
             Me Contacter
@@ -87,28 +92,28 @@ const Header: React.FC = () => {
           <FaLeaf size={36} className="text-white" />
           <nav className="flex flex-col gap-8 text-center mt-16">
             <Link
-              href="/cedric-jardins/accueil"
+              href={`${businessHref}/accueil`}
               className="text-white font-semibold text-2xl"
               onClick={() => setMenuOpen(false)}
             >
               Accueil
             </Link>
             <Link
-              href="/cedric-jardins/apropos"
+              href={`${businessHref}/apropos`}
               className="text-white font-semibold text-2xl"
               onClick={() => setMenuOpen(false)}
             >
               À propos
             </Link>
             <Link
-              href="/cedric-jardins/services"
+              href={`${businessHref}/services`}
               className="text-white font-semibold text-2xl"
               onClick={() => setMenuOpen(false)}
             >
               Services
             </Link>
             <Link
-              href="/cedric-jardins/contact"
+              href={`${businessHref}/contact`}
               className="text-white font-semibold text-2xl"
               onClick={() => setMenuOpen(false)}
             >

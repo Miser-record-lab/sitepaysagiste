@@ -10,12 +10,23 @@ import ContactPhone from "@/components/ContactPhone";
 export default function Contact() {
   return (
     <main>
-      <Header />
+      <Header businessName="Cédric Jardins" businessHref="/cedric-jardins"/>
       <ContactHero />
-      <ContactPhone />
+      <ContactPhone 
+        phoneNumber="+33 6 67 17 90 63"
+        email="credricjardins@gmail.com"
+        address="12 Chem. de la Merlette"
+      />
       <ContactContact />
-      <Location />
-      <Footer />
+      <Location 
+          cities={['Cannes', 'Antibes', 'Valbonne', 'Mandelieu', 'Mougins', 'Le Cannet', 'Grasse', 'Vallauris', 'Biot', 'Théoule-sur-Mer']} 
+          introText="Nous couvrons Cannes, Antibes & Mandelieu" 
+        />
+      <Footer 
+          businessName="Cédric Jardins"
+          phoneNumber="+33 6 67 17 90 63"
+          address="12 Chem. de la Merlette"
+        />
     </main>
   );
 }

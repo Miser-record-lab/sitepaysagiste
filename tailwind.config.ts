@@ -18,6 +18,9 @@ export default {
         green : {
           DEFAULT: '#468e5e',
           100: '#4e8561',
+        },
+        grey: {
+          DEFAULT: '#232d35',
         }
       },
     },

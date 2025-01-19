@@ -7,11 +7,15 @@ import AboutUs from "@/components/AboutUs";
 export default function About() {
   return (
     <main>
-      <Header />
-      <AboutHero />
-      <AboutInfo />
+      <Header businessName="Cédric Jardins" businessHref="/cedric-jardins"/>
+      <AboutHero businessName="de Cédric Jardins"/>
+      <AboutInfo region="Cannes"/>
       <AboutUs />
-      <Footer />
+      <Footer 
+          businessName="Cédric Jardins"
+          phoneNumber="+33 6 67 17 90 63"
+          address="12 Chem. de la Merlette"
+        />
     </main>
   );
 }

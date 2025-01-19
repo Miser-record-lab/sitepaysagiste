@@ -3,7 +3,7 @@ import React from 'react';
 
 const ContactContact: React.FC = () => {
   return (
-    <section className="bg-white py-16 px-8 md:py-[100px] flex flex-col md:flex-row items-stretch">
+    <section className="bg-white py-16 px-8 flex flex-col md:flex-row items-stretch">
       {/* Image Section */}
       <div className="md:w-2/5 hidden md:relative md:flex  bg-cover bg-center" style={{ backgroundImage: "url('/slider3.png')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col  p-8">

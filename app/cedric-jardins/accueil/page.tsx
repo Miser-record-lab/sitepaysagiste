@@ -10,13 +10,24 @@ export default function Home() {
   return (
     <main>
       <div>
-        <Header />
-        <Hero />
-        <Presentation />
+        <Header businessName="Cédric Jardins" businessHref="/cedric-jardins"/>
+        <Hero businessName="Cédric Jardins"/>
+        <Presentation 
+          businessName="Cédric Jardins"
+          profession="paysagiste"
+          location="Cannes"
+        />
         <Features />
-        <Location />
+        <Location 
+          cities={['Cannes', 'Antibes', 'Valbonne', 'Mandelieu', 'Mougins', 'Le Cannet', 'Grasse', 'Vallauris', 'Biot', 'Théoule-sur-Mer']} 
+          introText="Nous couvrons Cannes, Antibes & Mandelieu" 
+        />
         <ServicesContact />
-        <Footer />
+        <Footer 
+          businessName="Cédric Jardins"
+          phoneNumber="+33 6 67 17 90 63"
+          address="12 Chem. de la Merlette"
+        />
       </div>
     </main>
   );

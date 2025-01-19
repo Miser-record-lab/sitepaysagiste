@@ -1,22 +1,23 @@
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Location from "@/components/Location";
-import Presentation from "@/components/Presentation";
-import ServicesContact from "@/components/ServicesContact";
+import AboutSection from "@/components/website/AboutWebsite";
+import Collaboration from "@/components/website/CollaborationWebsite";
+import ContactWebsite from "@/components/website/ContactWebsite";
+import FooterWebsite from "@/components/website/FooterWebsite";
+import HeaderWebsite from "@/components/website/HeaderWebsite";
+import HeroWebsite from "@/components/website/HeroWebsite";
+import PriceWebsite from "@/components/website/PriceWebsite";
+
 
 export default function Home() {
   return (
     <main>
       <div>
-        <Header />
-        <Hero />
-        <Presentation />
-        <Features />
-        <Location />
-        <ServicesContact />
-        <Footer />
+        <HeaderWebsite />
+        <HeroWebsite />
+        <AboutSection />
+        <Collaboration />
+        <PriceWebsite />
+        <ContactWebsite />
+        <FooterWebsite />
       </div>
     </main>
   );

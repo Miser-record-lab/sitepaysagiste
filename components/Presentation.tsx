@@ -5,7 +5,13 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const Presentation: React.FC = () => {
+interface PresentationProps {
+  businessName: string;
+  profession: string;
+  location: string;
+}
+
+const Presentation: React.FC<PresentationProps> = ({ businessName, profession, location }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = ['/slider1.png', '/slider2.png', '/slider3.png'];
 
@@ -22,11 +28,11 @@ const Presentation: React.FC = () => {
       {/* Text Section */}
       <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-light mb-4 text-black">
-          Cédric Jardins, paysagiste avec plus de 10 ans d&apos;expérience
+          {businessName}, {profession} avec plus de 10 ans d&apos;expérience
         </h2>
         <p className="text-green text-lg md:text-xl font-semibold mb-6">Sublimer votre espace extérieur</p>
         <p className="text-gray-700 text-sm md:text-lg">
-          Situé à Cannes, je suis un paysagiste passionné par la transformation d&apos;espaces extérieurs en
+          Situé à {location}, je suis un {profession} passionné par la transformation d&apos;espaces extérieurs en
           véritables œuvres d&apos;art. Avec plus de 10 ans d&apos;expérience, je m&apos;efforce de créer des jardins uniques et
           adaptés à vos envies et besoins.
         </p>

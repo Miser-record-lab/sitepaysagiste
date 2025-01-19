@@ -8,21 +8,21 @@ const priceData = [
     title: 'Réparations',
     description:
       'Réparation et installation disponibles pour les systèmes de gicleurs, les étangs et les jeux d’eau, ainsi que les systèmes d’éclairage extérieur basse tension. Minimum de 2 heures.',
-    price: '$115/heure par personne'
+    price: '115 €/heure par personne'
   },
   {
     icon: <FaLeaf size={32} className="text-primary-100" />,
     title: 'Consultation Paysagère',
     description:
       'Inclut une réunion sur site d’une heure comprenant des conseils, des idées, une analyse sur place + 2 heures pour des recommandations écrites, des devis, des références d’entrepreneurs et notre proposition.',
-    price: '$165.00 par heure'
+    price: '165.00 € par heure'
   },
   {
     icon: <FaTruck size={32} className="text-primary-100" />,
     title: 'Main-d’œuvre Générale & Livraison de Plantes',
     description:
       'Livraison en bordure de trottoir partout aux alentours de Cannes & Antibes. Service de plantation disponible. Minimum de 2 heures.',
-    price: '$77/heure par personne'
+    price: '77 €/heure par personne'
   }
 ];
 
