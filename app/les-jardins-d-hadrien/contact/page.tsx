@@ -14,7 +14,7 @@ export default function Contact() {
       <ContactHero />
       <ContactPhone 
         phoneNumber="+33 6 10 36 62 82"
-        email="credricjardins@gmail.com"
+        email="lesjardinsdhadrien@gmail.com"
         address="46 Av. Saint-Jean"
       />
       <ContactContact />
