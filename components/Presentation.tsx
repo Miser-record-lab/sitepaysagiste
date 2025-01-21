@@ -26,7 +26,7 @@ const Presentation: React.FC<PresentationProps> = ({ businessName, profession, l
   return (
     <section className="flex flex-col md:flex-row items-center justify-between w-full py-8 md:py-16 px-6 md:px-20 gap-10 mt-10 mb-10">
       {/* Text Section */}
-      <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+      <div className="md:w-1/2 max-w-[600px] mb-8 md:mb-0 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-light mb-4 text-black">
           {businessName}, {profession} avec plus de 10 ans d&apos;expérience
         </h2>
@@ -40,7 +40,7 @@ const Presentation: React.FC<PresentationProps> = ({ businessName, profession, l
 
       {/* Slider Section for larger screens */}
       <div className="hidden md:flex md:w-1/2 relative items-center justify-center">
-        <div className="w-full h-48 md:h-80 relative">
+        <div className="w-full h-48 md:h-[500px] max-w- relative">
           <Image
             src={images[currentIndex]}
             alt={`Slider image ${currentIndex + 1}`}

@@ -14,7 +14,7 @@ const AboutInfo: React.FC<AboutInfoProps> = ({ region }) => {
           Conception, Installation et Entretien Paysager d&apos;Expert
         </h2>
         <p className="text-green-700 text-lg md:text-xl font-semibold mb-6">Fondé en 2005</p>
-        <p className="text-gray-700 text-base md:text-lg">
+        <p className="text-gray-700 text-base md:text-lg text-justify">
           Je connais parfaitement la région de {region} et ses environs. J’ai eu le privilège de travailler dans de
           nombreux lieux magnifiques, transformant des espaces extérieurs en véritables havres de paix adaptés à vos envies.
         </p>

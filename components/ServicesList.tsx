@@ -51,7 +51,7 @@ const ServicesList: React.FC = () => {
               style={{ backgroundImage: `url(${service.image})` }}
             ></div>
             <h3 className="text-2xl font-bold text-primary-100 mb-4">{service.title}</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">{service.description}</p>
+            <p className="text-gray-700 text-sm leading-relaxed text-justify">{service.description}</p>
           </div>
         ))}
       </div>
