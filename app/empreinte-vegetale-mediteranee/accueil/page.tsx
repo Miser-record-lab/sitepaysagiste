@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegétale-mediteranee"/>
+        <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegetale-mediteranee"/>
         <Hero businessName="Empreinte Végétale Méditeranée"/>
         <Presentation 
           businessName="Empreinte Végétale Méditeranée"
