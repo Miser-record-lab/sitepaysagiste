@@ -10,7 +10,7 @@ import ServicesContact from "@/components/ServicesContact";
 export default function Services() {
   return (
     <main>
-      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegétale-mediteranee"/>
+      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegetale-mediteranee"/>
       <ServicesHero />
       <ServicesList />
       <ServicesPrices />
