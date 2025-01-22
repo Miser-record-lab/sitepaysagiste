@@ -10,7 +10,7 @@ import ContactPhone from "@/components/ContactPhone";
 export default function Contact() {
   return (
     <main>
-      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegétale-mediteranee"/>
+      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegetale-mediteranee"/>
       <ContactHero />
       <ContactPhone 
         phoneNumber="+33 6 47 30 18 29"
