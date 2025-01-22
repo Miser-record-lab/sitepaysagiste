@@ -7,7 +7,7 @@ import AboutUs from "@/components/AboutUs";
 export default function About() {
   return (
     <main>
-      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegétale-mediteranee"/>
+      <Header businessName="Empreinte Végétale Méditeranée" businessHref="/empreinte-vegetale-mediteranee"/>
       <AboutHero businessName="de Empreinte Végétale Méditeranée"/>
       <AboutInfo region="Nice"/>
       <AboutUs />
